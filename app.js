@@ -69,6 +69,9 @@ function fetchData(){
                 typedLink.parentElement.remove();
             }, 5000);
         }
+        copyBtn.ontouchstart = function(){
+            copyToClipboard();
+        }
         copied.appendChild(shortendLink);
         copied.appendChild(copyBtn);
         shortLink.appendChild(typedLink);
