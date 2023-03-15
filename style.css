@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.mobile{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.error{
+    outline-color: hsl(0, 87%, 67%);
+    color: hsl(0, 87%, 67%);
+}
+.imgs{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(257, 7%, 63%);
+    transition: all 0.4s;
+}
+.get-btn, button{
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+}
+h1{
+    font-size: 60px;
+}
+h1, h2, h3, h4{
+    color: hsl(255, 11%, 22%);
+}
+h2{
+    font-size: 38px;
+}
+p{
+    line-height: 30px;
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+}
+button{
+    cursor: pointer;
+    transition: all 0.4s;
+}
+svg path{
+    transition: all 0.4s;
+}
+.get-btn{
+    padding: .85rem 3rem;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 30px;
+    color: white;
+}
+.get-btn:hover, button:hover, .sign-up:hover, .menu-sign-up:hover{
+    opacity: .6;
+}
+.links a:hover, .login:hover{
+    color: hsl(255, 11%, 22%);
+}
+.foot-link a:hover{
+    color: hsl(180, 66%, 49%);
+}
+.social-links svg:hover path{
+    fill: hsl(180, 66%, 49%);
+}
+
+header{
+    padding: 3rem 6rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-links, .links, .auth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    margin-left: 4rem;
+}
+.links a, .auth a{
+    font-size: 16px;
+}
+.pricing{
+    margin: 0 2rem;
+}
+.sign-up{
+    padding: .5rem 1.3rem;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 30px;
+    color: white;
+    margin-left: 2rem;
+}
+.illus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-btns{
+    cursor: pointer;
+}
+.menu{
+    background-color: hsl(257, 27%, 26%);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: -2rem;
+    transition: all 0.4s;
+}
+.menu a{
+    color: white;
+}
+.menu a:hover{
+    color: hsl(257, 7%, 63%);
+}
+.menu ul{
+    line-height: 50px;
+}
+hr{
+    background-color: hsl(255, 11%, 22%);
+}
+.menu-sign-up{
+    padding: .75rem 1rem;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 30px;
+    width: 100%;
+}
+.illu{
+    margin-bottom: 3rem;
+}
+.illus-texts p{
+    padding-right: 6rem;
+}
+.shorten{
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 2rem;
+    border-radius: 12px;
+    position: relative;
+    bottom: -7rem;
+    z-index: 99;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 75%;
+    padding: 1rem 0 1rem 1rem;
+    border: 2px solid hsl(257, 27%, 26%);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.error-msg{
+    margin-bottom: 1rem;
+    color: hsl(0, 87%, 67%);
+    font-style: italic;
+}
+.form button{
+    width: 20%;
+    padding: 1rem 2.5rem;
+    border: 2px solid hsl(257, 27%, 26%);
+    border-radius: 8px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+.short-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0 1rem;
+}
+.copied{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-btn{
+    padding: .5rem 2.5rem;
+    border: 2px solid hsl(180, 66%, 49%);
+    border-radius: 8px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+.typed-link{
+    color: hsl(260, 8%, 14%);
+}
+.shortened-link{
+    color: hsl(180, 66%, 49%);
+}
+.hr{
+    background-color: red;
+    height: 5px;
+}
+
+.statistics{
+    background-color: whitesmoke;
+    padding: 3rem 6rem;
+    position: relative;
+}
+.advanced{
+    text-align: center;
+    margin: 6rem auto;
+}
+.advanced p{
+    margin: auto;
+    width: 540px;
+    color: hsl(257, 7%, 63%);
+}
+.stats-options{
+    margin-bottom: 4rem;
+}
+.options{
+    position: relative;
+}
+.opt{
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    z-index: 99;
+    height: fit-content;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.1);
+}
+.detailed{
+    margin-top: 2.5rem;
+}
+.fully{
+    margin-top: 5rem;
+}
+.options{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.options-img{
+    padding: 1.5rem;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 100%;
+    position: relative;
+    top: -5rem;
+    margin-bottom: -4rem;
+}
+.line{
+    background-color: cyan;
+    height: 7px;
+    position: relative;
+    z-index: 0;
+    width: 150px;
+    transform: translateY(200px);
+}
+
+.boost{
+    text-align: center;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 3rem 1rem 6rem 1rem;
+    color: white;
+}
+
+footer{
+    background-color: hsl(260, 8%, 14%);
+    padding: 3rem 6rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-link h4{
+    color: white;
+}
+.footer-link a{
+    font-weight: 500;
+}
+.foot-link{
+    line-height: 40px;
+}
+.resources{
+    margin: 0 5rem;
+}
+.bst{
+    color: white;
+    margin-top: 2rem;
+}
+.social-links{
+    word-spacing: 1rem;
+}
+
+@media screen and (max-width: 800px){
+    footer,header, .statistics{
+        padding: 3rem 2rem;
+    }
+    .advanced p{
+        width: auto;
+    }
+    .resources{
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    .illus{
+        flex-direction: column;
+        align-items: normal;
+        text-align: center;
+    }
+    .illus-texts p{
+        padding-right: 0;
+    }
+    .shorten{
+        background-image: url("./images/bg-shorten-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem;
+        bottom: -8rem;
+    }
+    .form{
+        flex-direction: column;
+    }
+    input, .form button{
+        width: auto;
+    }
+    input{
+        margin-bottom: 1rem;
+    }
+    .short-link, .copied{
+        flex-direction: column;
+    }
+    .short-link{
+        padding-bottom: 2rem;
+        align-items: normal;
+        font-size: 16px;
+    }
+    .copied{
+        align-items: normal;
+    }
+    .copy-btn{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .advanced p{
+        width: auto;
+    }
+    .line{
+        transform: rotate(90deg);
+        width: auto;
+    }
+    .opt{
+        text-align: center;
+        padding: 1rem;
+        height: auto;
+    }
+    .detailed{
+        margin: 5rem auto;
+    }
+    .fully{
+        margin: 0;
+    }
+
+    .boost{
+        background-color: hsl(257, 27%, 26%);
+        background-image: url("./images/bg-boost-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem 1rem 6rem 1rem;
+    }
+
+    .options{
+        flex-direction: column;
+    }
+    .options-img{
+        top: -3rem;
+        margin-bottom: -2rem;
+    }
+
+    footer,header,.statistics{
+        padding: 3rem 1.5rem;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .resources{
+        margin: auto;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
